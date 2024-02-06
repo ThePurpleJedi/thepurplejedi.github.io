@@ -35,4 +35,6 @@ function switchTheme() {
 
         localStorage.setItem("theme", "light")
     }
+
+    document.location.reload();
 }
