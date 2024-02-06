@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title> Retrospection </title>
+		<link rel = "stylesheet" href = "./styles.css">
+	</head>
+
+	<body class = "body_wrapper" onload="setTheme()">
+    
+        <div class = "flex_wrapper navbar_wrapper">
+            <div>
+                <button type="button" class="navbar_button" onclick= "document.location = './index.html'"> Home </button>
+            </div>
+            <div>
+                <button type="button" class="navbar_button" onclick= "document.location = './pages/about-me.html'"> Who I<br>Am </button>
+            </div>
+            <div>
+                <button type="button" class="navbar_button" onclick= "document.location = './pages/edu-bg.html'"> Education History </button>
+            </div>
+            <div>
+                <button type="button" class="navbar_button" onclick= "document.location = './pages/achievements.html'"> Notable Deeds </button>
+            </div>
+            <div>
+                <button type="button" class="navbar_button" onclick= "document.location = './pages/skills.html'"> Mentionable Abilities </button>
+            </div>
+            <div>
+                <button type="button" class="navbar_button" onclick= "document.location = './pages/blog.html'"> Some <br> Thoughts </button>
+            </div>
+
+            <div> 
+                <button type="button" class="navbar_button toggle_button" id = "theme_toggle_switch"> 
+                    Toggle<br>Dark/<br>Light 
+                </button>
+                <script src="./theme_script.js"></script>
+            </div>
+        </div>
+
+        <div class="body">
+        <div class="flex_wrapper">
+            <div class = "title_image">
+                <h1 id = "title_image_text"> </h1>
+            </div>
+
+            <div class = "title_text">
+                <h2><span class = "main_title">Hello there</span><br><br> Raghav Doshi, at your service. <br><br>Welcome to my page :)</h2>
+            </div> 
+        </div>
+    </div>
+	</body>
+   
+</html>
