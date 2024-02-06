@@ -100,7 +100,28 @@
     100%{transform: translate(0, 0);}
 }
 
-.navbar_button, .toggle_button{
+.navbar_button{
+
+    overflow: hidden;
+
+    font-family: monospace;
+    font-size: 100%;
+    color: var(--font-reg-color);
+    width: 5vw;
+    height: 5vw;
+    min-width: 100px;
+    min-height: 50px;
+
+    padding: 0;
+    margin: 5% 0;
+
+    border: solid var(--border-color) 2px;
+    border-radius: 4px;
+
+    background-color: var(--secondary);
+}
+
+.toggle_button{
 
     overflow: hidden;
 
