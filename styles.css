@@ -20,7 +20,7 @@
 
     --font-head-color: #130f07;
     --font-reg-color: #0e0c07;
-    --font-animation: rgb(201, 255, 187);
+    --font-animation: rgb(82, 162, 62);
     --title-img-txt-color: #121509d8;
     --title-img-text-font: serif;
 
@@ -40,11 +40,14 @@
     display: flex;
     flex-wrap: wrap;
 
-    height: 100vh;
+    min-height: 100vh;
+    min-width: 100vw;
 }
 
 .body {
     animation: slide-in 2.5s cubic-bezier(0.19, 1, 0.22, 1) -0.1s 1;
+
+    min-width: 400px;
 
     margin-top: 8vh;
     margin-left: 2%;
@@ -64,7 +67,7 @@
 
 .flex_wrapper {
     display: flex;
-
+    /* flex-wrap: wrap; */
     justify-content: space-between;
     background-color: var(--primary);
 
@@ -77,6 +80,8 @@
 }
 
 .navbar_wrapper {
+    animation: navbar-slide 2.5s cubic-bezier(0.19, 1, 0.22, 1) -0.1s 1;
+
     border: none;
     margin-top: 8vh;
     padding: 0.8vh 0.8vw;
@@ -85,8 +90,14 @@
     flex-direction: column;
     
     height: 80vh;
+    min-width: 80px;
 
     font-family: monospace;
+}
+
+@keyframes navbar-slide {
+    0% {transform: translate(-100%, 0);}
+    100%{transform: translate(0, 0);}
 }
 
 .navbar_button, .toggle_button{
@@ -98,6 +109,8 @@
     color: var(--font-reg-color);
     width: 5vw;
     height: 5vw;
+    min-width: 100px;
+    min-height: 50px;
 
     padding: 0;
     margin: 5% 0;
@@ -124,7 +137,7 @@
     background-size:cover;
     background-repeat: no-repeat;
     background-attachment:scroll;
-    background-position: top;
+    background-position: left top;
     height: 450px;
     width: 50vw;
     
@@ -139,20 +152,20 @@
 }
 
 .title_text {
-    font-size: large;
+    font-size: calc((1vw + 100%) / 2);
     color: var(--font-head-color);
     text-wrap: wrap;
 
     max-width: 40%;
     
     padding: 5%;
-    margin: 5% 0;
+    margin: 3% 0;
 }
 
 .main_title {
     animation: fancy_stuff 2s linear 0s infinite;
 
-    font-size: 90px; 
+    font-size: 5vw; 
     font-variant: small-caps;
 }
 
