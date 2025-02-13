@@ -1,6 +1,6 @@
 document.getElementById("theme_toggle_switch").addEventListener('click', switchTheme);
 
-document.onload = setTheme();
+document.onload = setTheme;
 
 function setTheme() {
     theme = localStorage.getItem("theme");
